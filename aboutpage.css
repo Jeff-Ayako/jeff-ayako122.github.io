@@ -1,0 +1,178 @@
+:root{
+    --primary-color:red;
+}
+
+body{
+background-color: lightslategray;
+margin:0px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: large;
+text-align: center;
+color:black;
+align-items: center;
+
+
+
+}
+.container h1{
+    text-transform: uppercase;
+    border-bottom: crimson solid ;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    position: relative;
+    animation-name: heading;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+}
+.container p{
+    padding-top: 00px;
+    text-align: center;
+    max-width: 1000px;
+    position:relative;
+    /* border:solid gray;
+    border-radius: 20px; */
+    align-items: center;
+    margin: auto;
+    animation-name:content-wrapper;
+    animation-duration:3s;
+
+
+
+}
+.button{
+    display:inline-block;
+    position: relative; 
+    text-align: center;
+    border: crimson solid 1px;
+    margin: auto;
+    align-items: center;
+    text-decoration:none;
+    color: blanchedalmond;
+    font-size: medium;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding:5px;
+    transition: 1s;
+    animation-name: button;
+    animation-duration:3s;
+
+}
+.image{
+    height: 200px;
+    width: 200px;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-image:url(Redempta.png);
+    margin: auto;
+    opacity: 0;
+    animation-name: imagep;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+
+
+
+}
+.image p{
+    opacity: 0;
+    transition: 1s;
+    text-align:center;
+    margin: auto;
+    padding-top: 100px;
+    border: darkgoldenrod solid;
+    padding-top: 0px;
+    margin-top: 0px;
+    position: relative;
+    border-radius: 50%;
+    background-color: darkkhaki; 
+}
+.image p:hover{
+    opacity: 1;
+    padding-top: 90px;
+    margin-bottom: 0px;
+
+
+
+
+}
+.button:hover{
+    background-color: brown;
+    transform:rotateY(180deg);
+
+
+}
+@keyframes imagep{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+
+
+}
+@keyframes heading{
+    0%{top:-200px;}
+    100%{top:0px;}
+}
+@keyframes content-wrapper{
+    0%{left:-1200px;}
+    100%{left:0px;}
+
+}
+
+
+
+/* .box{
+width:400px;
+height:400px;
+background: mediumorchid;
+position: relative; 
+animation-name: myanimation;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+-webkit-animation-fill-mode:forwards;
+animation-delay:1s;
+text-align: center;
+animation-timing-function:linear;
+margin:auto;
+top:200px;
+
+
+
+}
+.box>div{
+    text-align: center;
+    margin-top: 200px;
+    margin-left:200px;
+} */
+/* @keyframes myanimation{
+    0%{background-color:mediumorchid;border-radius:0 0 0 0 ;left:0;top:0; }
+    25%{background-color:mediumturquoise;border-radius:0 50% 0 0;left:400px;top:0}
+    50%{background-color:rgb(232, 247, 245);border-radius:0 50% 50% 0;left:400px;top:400px;}
+    75%{background-color:rgb(37, 5, 126);border-radius:0% 50% 50% 50% ;left:0;top:400px;}
+    100%{background-color:rgb(187, 228, 7);border-radius:50% 50% 50% 50% ;left:0;top:0;}
+ } */
+ /* @keyframes myanimation{
+    0%{background-color:mediumorchid;border-radius:0 0 0 0 ;}
+    25%{background-color:mediumturquoise;border-radius:0 50% 0 0;}
+    50%{background-color:rgb(232, 247, 245);border-radius:0 50% 50% 0;}
+    75%{background-color:rgb(37, 5, 126);border-radius:0% 50% 50% 50% ;}
+    100%{background-color:rgb(187, 228, 7);border-radius:50% 50% 50% 50%;}
+ }
+ .rotation{
+     height:100px;
+     width: 100px;
+     background:crimson;
+     top:0px;
+     transition-property: background, border-radius,transform;
+     transition-duration:2s;
+ }
+ .rotation:hover{
+     background:darkblue;
+     border-radius:50%;
+     transform: rotateY(180deg);
+
+
+ } */
